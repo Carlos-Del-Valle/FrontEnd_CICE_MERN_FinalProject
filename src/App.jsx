@@ -1,23 +1,25 @@
-import './App.css';
-import { useState, useEffect } from "react";
+import React from "react";
+import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
 
-//functions
-import {getTest} from "./functions/test";
 
-function App() {
-  const [data, setData] = useState("Hello World!");
+// Components
 
-  useEffect(() => {
-    getTest()
-        .then((res) => {
-          setData(res.message);
-        })
-        .catch((err) => console.log(err));
-  },[]);
+import Header from "./components/Header"
+import Home from "./pages/Home";
+import Signup from "./pages/Signup";
+import Login from "./pages/Login";
 
+
+const App = () => {
   return (
-      <div className="App">
-        <h1>{data}</h1>
+      <div>
+        <Router>
+            <Header />
+            <Route exact path="/" component={Home} />
+            <Route exact path="/signup" component={Signup} />
+            <Route exact path="/login" component={Login} />
+        </Router>
+
       </div>
   );
 }
