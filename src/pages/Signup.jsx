@@ -47,6 +47,7 @@ const Signup = () => {
                     variant="outlined"
                     className="form-control"
                     label="Username"
+                    placeholder="username"
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
                 />
@@ -58,6 +59,7 @@ const Signup = () => {
                     variant="outlined"
                     className="form-control"
                     label="Email"
+                    placeholder="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                 />
@@ -69,6 +71,7 @@ const Signup = () => {
                     <InputLabel>Password</InputLabel>
                     <OutlinedInput
                         label="Password"
+                        placeholder="Password"
                         type={showPassword ? "text" : "password"}
                         value={ password }
                         onChange={(e) => setPassword(e.target.value)}
@@ -126,6 +129,7 @@ const Signup = () => {
                     variant="outlined"
                     className="form-control"
                     label="Confirm Password"
+                    placeholder="Confirm Password"
                     value={ confirmPassword }
                     onChange={(e) => setConfirmPassword(e.target.value)}
                 />

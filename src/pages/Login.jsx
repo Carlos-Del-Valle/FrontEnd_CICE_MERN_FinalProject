@@ -34,6 +34,7 @@ const Login = () => {
                     variant="outlined"
                     className="form-control"
                     label="Email"
+                    placeholder="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                 />
@@ -45,6 +46,7 @@ const Login = () => {
                     <InputLabel>Password</InputLabel>
                     <OutlinedInput
                      label="Password"
+                     placeholder="Password"
                      type={showPassword ? "text" : "password"}
                      value={ password }
                      onChange={(e) => setPassword(e.target.value)}
