@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
 
-            <Link className="navbar-brand" to="/">Ponte a estudiar, carallo</Link>
+            <Link className="navbar-brand" to="/">Slacker List</Link>
             <button className="navbar-toggler"
                     type="button"
                     data-toggle="collapse"
