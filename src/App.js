@@ -1,5 +1,6 @@
 import React from "react"
 import { BrowserRouter, Route, Switch } from "react-router-dom"
+import { Container } from "@material-ui/core"
 
 import Todos from './components/todos/Todos'
 import SignIn from './components/auth/SignIn'
@@ -10,12 +11,14 @@ const App = () => {
   return (
       <>
         <BrowserRouter>
+            <Container maxWidth= "md">
             <Navbar/>
                 <Switch>
                     <Route path="/signin" component={SignIn}/>
                     <Route path="/signup" component={SignUp}/>
-                    <Route path="/" component={Todos}/> /* Dear: Carlos from the future dont forget the "exact" here or use the switch component */
+                    <Route path="/" component={Todos}/>
                 </Switch>
+            </Container>
         </BrowserRouter>
       </>
   )
