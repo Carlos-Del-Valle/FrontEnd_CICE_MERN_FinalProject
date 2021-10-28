@@ -1,4 +1,5 @@
 import React from 'react'
+import { useSelector } from "react-redux"
 
 import { AppBar, Typography, Toolbar, Button } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
@@ -20,6 +21,8 @@ const useStyles = makeStyles({
 
 const NavBar= () => {
     const classes = useStyles()
+    const state =useSelector(state => state)
+    console.log(state)
     const history = useHistory()
 
     const handleSignOut = () => {
