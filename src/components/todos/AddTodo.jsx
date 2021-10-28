@@ -36,7 +36,8 @@ const AddTodo = ({todo, setTodo}) => {
                 name: todo.name,
                 isComplete: todo.isComplete,
                 date: todo.date,
-                author: "Charly",
+                author: todo.author,
+                uid: todo.uid,
             }
 
             dispatch(updateTodo(updatedTodo, id))
