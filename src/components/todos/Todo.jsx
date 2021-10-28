@@ -7,7 +7,7 @@ import { makeStyles } from "@material-ui/styles"
 
 import moment from "moment"
 
-import { checkTodo, deleteTodo } from "../../../store/actions/todoActions";
+import { checkTodo, deleteTodo } from "../../store/actions/todoActions";
 
 const useStyles = makeStyles({
     todoStyle: {
