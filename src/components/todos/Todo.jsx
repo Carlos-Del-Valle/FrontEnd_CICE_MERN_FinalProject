@@ -22,7 +22,7 @@ const useStyles = makeStyles({
         color: "8f8f8f"
     },
     isComplete: {
-        color: "green0"
+        color: "green"
     },
     checked : {
         textDecoration: "line-through"
