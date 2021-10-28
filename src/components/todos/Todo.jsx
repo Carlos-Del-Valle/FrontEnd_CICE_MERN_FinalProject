@@ -7,7 +7,7 @@ import { makeStyles } from "@material-ui/styles"
 
 import moment from "moment"
 
-import { checkTodo } from "../../../store/actions/todoActions";
+import { checkTodo, deleteTodo } from "../../../store/actions/todoActions";
 
 const useStyles = makeStyles({
     todoStyle: {
@@ -43,9 +43,15 @@ const Todo = ({ todo, setTodo }) => {
         })
     }
 
-const handleCheck = (id) =>{
+    const handleCheck = (id) => {
     dispatch(checkTodo(id))
 }
+
+const handleDelete = (id) =>{
+    dispatch(deleteTodo(id))
+}
+
+
 
     return (
         <>
@@ -81,7 +87,7 @@ const handleCheck = (id) =>{
                        <Button onClick={ () => handleUpdateClick()}>
                            <Create color="primary"/>
                        </Button>
-                       <Button>
+                       <Button onClick = { () => handleDelete(todo._id)}>
                            <Delete color="secondary"/>
                        </Button>
                    </ButtonGroup>
