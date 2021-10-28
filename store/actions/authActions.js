@@ -59,3 +59,11 @@ export const loadUser = () => {
         } else return null
     }
 }
+
+export const signOut = () => {
+    return (dispatch) => {
+        dispatch({
+            type: "SIGN_OUT"
+        })
+    }
+}

@@ -1,10 +1,11 @@
 import React from 'react'
-import { useSelector } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
 
 import { AppBar, Typography, Toolbar, Button } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
 
 import { Link, useHistory} from "react-router-dom"
+import { signOut } from "../../store/actions/authActions"
 
 // Styles from Material UI
 const useStyles = makeStyles({
@@ -24,9 +25,10 @@ const NavBar= () => {
     const state =useSelector(state => state)
     console.log(state)
     const history = useHistory()
+    const dispatch = useDispatch()
 
     const handleSignOut = () => {
-     //signOut the user
+        dispatch(signOut())
         history.push("/signin")
     }
 
