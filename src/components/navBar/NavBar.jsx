@@ -23,6 +23,7 @@ const useStyles = makeStyles({
 const NavBar= () => {
     const classes = useStyles()
     const state =useSelector(state => state)
+    const auth =useSelector(state => state.auth)
     console.log(state)
     const history = useHistory()
     const dispatch = useDispatch()
@@ -41,14 +42,19 @@ const NavBar= () => {
                         Slacker's List
                     </Link>
                 </Typography>
+                { auth._id ? (
+                <>
                 <Typography variant="subtitle2" className={ classes.root }>
-                    Logged in as Carlos
+                    Logged in as {auth.name}
                 </Typography>
                 <Button
                     color= "inherit"
                     onClick={() => handleSignOut()}>
                     SignOut
                 </Button>
+                </>
+                ) : (
+                <>
                 <Button color="inherit">
                     <Link className = { classes.linkStyle } to="/signin">
                     SignIn
@@ -60,6 +66,9 @@ const NavBar= () => {
                     SignUp
                     </Link>
                 </Button>
+                </>
+                    )
+                }
 
                 </Toolbar>
             </AppBar>
