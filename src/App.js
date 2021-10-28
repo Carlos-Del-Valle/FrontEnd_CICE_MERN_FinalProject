@@ -8,6 +8,9 @@ import SignIn from './components/auth/SignIn'
 import SignUp from './components/auth/SignUp'
 import Navbar from './components/navBar/NavBar'
 
+import { ToastContainer } from "react-toastify";
+import"react-toastify/dist/ReactToastify.css"
+
 const useStyles = makeStyles({
     contentStyle: {
        margin: "30px auto"
@@ -20,6 +23,7 @@ const App = () => {
   return (
       <>
         <BrowserRouter>
+            <ToastContainer/>
             <Container maxWidth= "md">
             <Navbar/>
             <Container className = { classes.contentStyle} maxWidth="sm">
