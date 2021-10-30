@@ -22,7 +22,7 @@ const useStyles = makeStyles({
 
 const NavBar= () => {
     const classes = useStyles()
-    const state =useSelector(state => state)
+    //const state =useSelector(state => state)
     const auth =useSelector(state => state.auth)
     const history = useHistory()
     const dispatch = useDispatch()
