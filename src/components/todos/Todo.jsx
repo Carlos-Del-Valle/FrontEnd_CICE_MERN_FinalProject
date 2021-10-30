@@ -69,7 +69,7 @@ const handleDelete = (id) =>{
                    }
 
                    <Typography className= { classes.grayStyle } variant="body2">
-                       Author: Charly
+                       Author: { todo.author }
                    </Typography >
                    <Typography className= { classes.grayStyle } variant="body2">
                        Added: { moment(todo.date).fromNow() }
