@@ -14,7 +14,7 @@ const authReducer = (state = initialState, action) => {
         case "USER_LOADED":
         case "SIGN_IN":
         case "SIGN_UP":
-            toast("Welcome", {
+            toast("Welcome, slacker!", {
                 position: toast.POSITION.BOTTOM_RIGHT
             })
 
