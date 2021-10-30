@@ -33,5 +33,15 @@ test('has sign up button', () => {
   expect(screen.getByText(/sign up/i)).toBeInTheDocument();
 });
 
+test('has submit button', () => {
+    render(
+        <Provider store={store}>
+            <App />
+        </Provider>
+    );
+
+    expect(screen.getByText(/submit/i)).toBeInTheDocument();
+});
+
 
 
