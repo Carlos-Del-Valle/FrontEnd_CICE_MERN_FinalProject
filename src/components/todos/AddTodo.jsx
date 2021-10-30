@@ -68,7 +68,7 @@ const AddTodo = ({todo, setTodo}) => {
             value = { todo.name }
             onChange = {(e) => setTodo({ ...todo, name: e.target.value })}
             />
-            <Button className={ classes.submitButton } color="primary" variant="contained" type="submit">
+            <Button className={ classes.submitButton } color="primary" variant="contained" type="submit" data-testid="enter-todo-button">
                 <Send/>
             </Button>
         </form>

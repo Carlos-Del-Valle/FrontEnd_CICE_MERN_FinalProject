@@ -71,7 +71,7 @@ if(auth._id) return <Redirect to="/" />
                     className={classes.spacing}
                     variant="contained"
                     color="primary"
-                    testid="login-button"
+                    data-testid="login-button"
                     type="submit">
                     SignIn
                 </Button>
