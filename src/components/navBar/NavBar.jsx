@@ -24,7 +24,6 @@ const NavBar= () => {
     const classes = useStyles()
     const state =useSelector(state => state)
     const auth =useSelector(state => state.auth)
-    console.log(state)
     const history = useHistory()
     const dispatch = useDispatch()
 
