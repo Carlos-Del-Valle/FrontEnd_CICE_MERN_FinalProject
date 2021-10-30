@@ -9,6 +9,10 @@ import rootReducer from './store/reducers/rootReducer';
 
 const store = createStore(rootReducer, applyMiddleware(thunk));
 
+test('making sure jest is configured properly', () => {
+    expect(true).toBe(true);
+});
+
 test("renders Slacker's list title", () => {
   render(
       <Provider store={store}>
@@ -28,5 +32,6 @@ test('has sign up button', () => {
 
   expect(screen.getByText(/sign up/i)).toBeInTheDocument();
 });
+
 
 
