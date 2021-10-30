@@ -49,11 +49,11 @@ const SignUp= () => {
                 autoComplete="off"
                 onSubmit={ handleSubmit }
             >
-                <Typography variant="h5"> signUp </Typography>
+                <Typography variant="h5"> Sign Up </Typography>
                 <TextField
                     className={classes.spacing}
                     id="enter-name"
-                    label="enterName"
+                    label="Username"
                     variant="outlined"
                     fullWidth
                     value = { user.name }
@@ -62,7 +62,7 @@ const SignUp= () => {
                 <TextField
                     className={classes.spacing}
                     id="enter-email"
-                    label="enterEmail"
+                    label="Email"
                     variant="outlined"
                     fullWidth
                     value = { user.email }
@@ -72,7 +72,7 @@ const SignUp= () => {
                     className={classes.spacing}
                     id="enter-password"
                     type="password"
-                    label="enterPassword"
+                    label="Password"
                     variant="outlined"
                     fullWidth
                     value = { user.password }
@@ -83,7 +83,7 @@ const SignUp= () => {
                     variant="contained"
                     color="primary"
                     type="submit">
-                    SignUp
+                    Submit
                 </Button>
             </form>
         </>

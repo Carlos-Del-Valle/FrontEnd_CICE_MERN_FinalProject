@@ -32,7 +32,7 @@ const ListTodos= ({setTodo}) => {
         <>
         <div className = { classes.todosStyle }>
             <Typography variant="h5">
-                { todos.length > 0 ? "tehTodos" : "noTodosYet" }
+                { todos.length > 0 ? "To do's list" : "No to dos yet ¯\\_(ツ)_/¯" }
             </Typography>
             { todos && todos.map((todo) => {
                 return (

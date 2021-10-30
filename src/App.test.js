@@ -26,5 +26,7 @@ test('has sign up button', () => {
       </Provider>
   );
 
-  expect(screen.getByText(/signup/i)).toBeInTheDocument();
+  expect(screen.getByText(/sign up/i)).toBeInTheDocument();
 });
+
+

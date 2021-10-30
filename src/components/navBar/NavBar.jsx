@@ -49,20 +49,20 @@ const NavBar= () => {
                 <Button
                     color= "inherit"
                     onClick={() => handleSignOut()}>
-                    SignOut
+                    Sign Out
                 </Button>
                 </>
                 ) : (
                 <>
                 <Button color="inherit">
                     <Link className = { classes.linkStyle } to="/signin">
-                    SignIn
+                    Sign In
 
                     </Link>
                 </Button>
                 <Button color="inherit">
                     <Link className = { classes.linkStyle } to="/signup">
-                    SignUp
+                    Sign Up
                     </Link>
                 </Button>
                 </>
@@ -76,3 +76,4 @@ const NavBar= () => {
 }
 
 export default NavBar
+

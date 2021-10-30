@@ -62,7 +62,7 @@ const AddTodo = ({todo, setTodo}) => {
             <TextField
             id="enter-todo"
             variant="outlined"
-            label="enterToDo"
+            label="Enter new to do"
             autoFocus
             fullWidth
             value = { todo.name }

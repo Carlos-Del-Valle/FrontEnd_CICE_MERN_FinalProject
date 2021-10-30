@@ -47,11 +47,11 @@ if(auth._id) return <Redirect to="/" />
             autoComplete="off"
             onSubmit = {handleSubmit}
             >
-                <Typography variant="h5"> signIn </Typography>
+                <Typography variant="h5"> Sign In </Typography>
                 <TextField
                     className={classes.spacing}
                     id="enter-email"
-                    label="enterEmail"
+                    label="Email"
                     variant="outlined"
                     fullWidth
                     value = { creds.email }
@@ -61,7 +61,7 @@ if(auth._id) return <Redirect to="/" />
                     className={classes.spacing}
                     id="enter-password"
                     type="password"
-                    label="enterPassword"
+                    label="Password"
                     variant="outlined"
                     fullWidth
                     value = { creds.password }
@@ -73,7 +73,7 @@ if(auth._id) return <Redirect to="/" />
                     color="primary"
                     data-testid="login-button"
                     type="submit">
-                    SignIn
+                    Submit
                 </Button>
             </form>
         </>
